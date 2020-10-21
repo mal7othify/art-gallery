@@ -2,7 +2,6 @@ package com.example.artgallary.ui
 
 import androidx.compose.ui.graphics.Color
 
-val purple200 = Color(0xFFBB86FC)
-val purple500 = Color(0xFF6200EE)
-val purple700 = Color(0xFF3700B3)
+val darkGray = Color(0xFF37474F)
+val lightGray = Color(0xFF607D8B)
 val teal200 = Color(0xFF03DAC5)
