@@ -7,24 +7,24 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
-        primary = lightGray,
-        primaryVariant = darkGray,
-        secondary = teal200
+    primary = lightGray,
+    primaryVariant = darkGray,
+    secondary = teal200
 )
 
 private val LightColorPalette = lightColors(
-        primary = lightGray,
-        primaryVariant = darkGray,
-        secondary = teal200
+    primary = lightGray,
+    primaryVariant = darkGray,
+    secondary = teal200
 
-        /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
+    /* Other default colors to override
+background = Color.White,
+surface = Color.White,
+onPrimary = Color.White,
+onSecondary = Color.Black,
+onBackground = Color.Black,
+onSurface = Color.Black,
+*/
 )
 
 @Composable
@@ -36,9 +36,9 @@ fun ArtGallaryTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compos
     }
 
     MaterialTheme(
-            colors = colors,
-            typography = typography,
-            shapes = shapes,
-            content = content
+        colors = colors,
+        typography = typography,
+        shapes = shapes,
+        content = content
     )
 }

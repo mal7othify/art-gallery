@@ -1,14 +1,13 @@
 
-ªkotlin:S11923"‘Define a constant instead of duplicating this literal " unchanged. It was popularised in the 1960s with the release of Letraset sheets " 3 times.(‚›ÇÅ
-ukotlin:S1192."]Define a constant instead of duplicating this literal "Lorem Ipsum is simply dummy " 3 times.(Ó¾¢â
-®kotlin:S11924"•Define a constant instead of duplicating this literal "containing Lorem Ipsum passages, and more recently with desktop publishing software " 3 times.(¾Ï°œ
-±kotlin:S11921"“Define a constant instead of duplicating this literal "type and scrambled it to make a type specimen book. It has survived not only five " 3 times.(ÏàÜØşÿÿÿÿ
-­kotlin:S11920"”Define a constant instead of duplicating this literal "standard dummy text ever since the 1500s, when an unknown printer took a galley of " 3 times.(õ€´‰
-©kotlin:S11922"Define a constant instead of duplicating this literal "centuries, but also the leap into electronic typesetting, remaining essentially" 3 times.(ìü£‰
-²kotlin:S1192/"”Define a constant instead of duplicating this literal "text of the printing and typesetting industry. Lorem Ipsum has been the industry's " 3 times.(ñá‚òøÿÿÿÿ
-•kotlin:S11925"xDefine a constant instead of duplicating this literal "like Aldus PageMaker including versions of Lorem Ipsum." 3 times.(‰ÓœÚÿÿÿÿÿ
+jkotlin:S100}"SRename function "ScreenPreview" to match the regular expression ^[a-z][a-zA-Z0-9]*$(¶ªºğ
 hkotlin:S100"LRename function "Screen" to match the regular expression ^[a-z][a-zA-Z0-9]*$(Ôçç­øÿÿÿÿ
-dkotlin:S100+"MRename function "Content" to match the regular expression ^[a-z][a-zA-Z0-9]*$(²…Ê¦
-`kotlin:S100O"IRename function "Art" to match the regular expression ^[a-z][a-zA-Z0-9]*$(ïš¾
-jkotlin:S100z"SRename function "ScreenPreview" to match the regular expression ^[a-z][a-zA-Z0-9]*$(¶ªºğ
-lkotlin:S100‚"TRename function "ContentPreview" to match the regular expression ^[a-z][a-zA-Z0-9]*$(èşÉâ
+±kotlin:S11924"“Define a constant instead of duplicating this literal "type and scrambled it to make a type specimen book. It has survived not only five " 3 times.(ÏàÜØşÿÿÿÿ
+©kotlin:S11925"Define a constant instead of duplicating this literal "centuries, but also the leap into electronic typesetting, remaining essentially" 3 times.(ìü£‰
+²kotlin:S11922"”Define a constant instead of duplicating this literal "text of the printing and typesetting industry. Lorem Ipsum has been the industry's " 3 times.(ñá‚òøÿÿÿÿ
+•kotlin:S11928"xDefine a constant instead of duplicating this literal "like Aldus PageMaker including versions of Lorem Ipsum." 3 times.(‰ÓœÚÿÿÿÿÿ
+­kotlin:S11923"”Define a constant instead of duplicating this literal "standard dummy text ever since the 1500s, when an unknown printer took a galley of " 3 times.(õ€´‰
+ukotlin:S11921"]Define a constant instead of duplicating this literal "Lorem Ipsum is simply dummy " 3 times.(Ó¾¢â
+dkotlin:S100."MRename function "Content" to match the regular expression ^[a-z][a-zA-Z0-9]*$(²…Ê¦
+®kotlin:S11927"•Define a constant instead of duplicating this literal "containing Lorem Ipsum passages, and more recently with desktop publishing software " 3 times.(¾Ï°œ
+ªkotlin:S11926"‘Define a constant instead of duplicating this literal " unchanged. It was popularised in the 1960s with the release of Letraset sheets " 3 times.(‚›ÇÅ
+`kotlin:S100R"IRename function "Art" to match the regular expression ^[a-z][a-zA-Z0-9]*$(ïš¾

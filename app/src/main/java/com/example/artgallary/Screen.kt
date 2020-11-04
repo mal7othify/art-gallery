@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.preferredHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.state
@@ -26,15 +27,17 @@ import androidx.compose.ui.unit.sp
 import androidx.ui.tooling.preview.Preview
 import com.example.artgallary.ui.ArtGallaryTheme
 
-
 @Composable
 fun Screen() {
-    Column {
-        TopAppBar(
-            title = { Text(text = "Art Gallery") },
-            backgroundColor = MaterialTheme.colors.primary,
-            contentColor = Color.White
-        )
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(text = "Art Gallery") },
+                backgroundColor = MaterialTheme.colors.primary,
+                contentColor = Color.White
+            )
+        }
+    ) {
         Content()
     }
 }
@@ -42,36 +45,17 @@ fun Screen() {
 @Composable
 fun Content() {
     ScrollableColumn {
-        Art(
-            R.drawable.p1, "Home mini image found in unsplash", "Lorem Ipsum is simply dummy " +
-                    "text of the printing and typesetting industry. Lorem Ipsum has been the industry's " +
-                    "standard dummy text ever since the 1500s, when an unknown printer took a galley of " +
-                    "type and scrambled it to make a type specimen book. It has survived not only five " +
-                    "centuries, but also the leap into electronic typesetting, remaining essentially" +
-                    " unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                    "containing Lorem Ipsum passages, and more recently with desktop publishing software " +
-                    "like Aldus PageMaker including versions of Lorem Ipsum."
-        )
-        Art(
-            R.drawable.p2, "Pixel phone image found in unsplash", "Lorem Ipsum is simply dummy " +
-                    "text of the printing and typesetting industry. Lorem Ipsum has been the industry's " +
-                    "standard dummy text ever since the 1500s, when an unknown printer took a galley of " +
-                    "type and scrambled it to make a type specimen book. It has survived not only five " +
-                    "centuries, but also the leap into electronic typesetting, remaining essentially" +
-                    " unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                    "containing Lorem Ipsum passages, and more recently with desktop publishing software " +
-                    "like Aldus PageMaker including versions of Lorem Ipsum."
-        )
-        Art(
-            R.drawable.p3, "Pixel Buds image found in unsplash", "Lorem Ipsum is simply dummy " +
-                    "text of the printing and typesetting industry. Lorem Ipsum has been the industry's " +
-                    "standard dummy text ever since the 1500s, when an unknown printer took a galley of " +
-                    "type and scrambled it to make a type specimen book. It has survived not only five " +
-                    "centuries, but also the leap into electronic typesetting, remaining essentially" +
-                    " unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                    "containing Lorem Ipsum passages, and more recently with desktop publishing software " +
-                    "like Aldus PageMaker including versions of Lorem Ipsum."
-        )
+        val dummyText = "Lorem Ipsum is simply dummy " +
+                "text of the printing and typesetting industry. Lorem Ipsum has been the industry's " +
+                "standard dummy text ever since the 1500s, when an unknown printer took a galley of " +
+                "type and scrambled it to make a type specimen book. It has survived not only five " +
+                "centuries, but also the leap into electronic typesetting, remaining essentially" +
+                " unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
+                "containing Lorem Ipsum passages, and more recently with desktop publishing software " +
+                "like Aldus PageMaker including versions of Lorem Ipsum."
+        Art(R.drawable.p1, "Home mini image found in unsplash", dummyText)
+        Art(R.drawable.p2, "Pixel phone image found in unsplash", dummyText)
+        Art( R.drawable.p3, "Pixel Buds image found in unsplash", dummyText)
     }
 }
 
@@ -122,13 +106,5 @@ fun Art(image: Int, title: String, desc: String) {
 fun ScreenPreview() {
     ArtGallaryTheme {
         Screen()
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun ContentPreview() {
-    ArtGallaryTheme {
-        Content()
     }
 }
