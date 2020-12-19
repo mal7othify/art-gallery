@@ -1,4 +1,4 @@
-package com.example.artgallary.ui
+package com.example.artgallary.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

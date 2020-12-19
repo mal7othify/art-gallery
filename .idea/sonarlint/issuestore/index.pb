@@ -13,3 +13,9 @@ S
 ,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
 d
 4app/src/main/java/com/example/artgallary/ui/Theme.kt,3/6/3654ad976b85a115c1bc33dc11e3c6e619a9c714
+<
+build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
+L
+.idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164

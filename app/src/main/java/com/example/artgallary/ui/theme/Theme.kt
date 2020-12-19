@@ -1,4 +1,4 @@
-package com.example.artgallary.ui
+package com.example.artgallary.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -16,15 +16,6 @@ private val LightColorPalette = lightColors(
     primary = lightGray,
     primaryVariant = darkGray,
     secondary = teal200
-
-    /* Other default colors to override
-background = Color.White,
-surface = Color.White,
-onPrimary = Color.White,
-onSecondary = Color.Black,
-onBackground = Color.Black,
-onSurface = Color.Black,
-*/
 )
 
 @Composable
