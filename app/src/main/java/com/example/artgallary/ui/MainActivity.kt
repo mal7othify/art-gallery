@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
+import com.example.artgallary.model.Arts
+import com.example.artgallary.ui.arts.AllArts
 import com.example.artgallary.ui.theme.ArtGallaryTheme
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContent {
             ArtGallaryTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    Screen()
+                    AllArts(Arts)
                 }
             }
         }
