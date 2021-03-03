@@ -20,7 +20,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.imageResource
@@ -34,7 +33,7 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
     var expandedState by remember { mutableStateOf(false) }
     Card(
         shape = RoundedCornerShape(10.dp),
-        backgroundColor = Color.White,
+        backgroundColor = MaterialTheme.colors.background,
         elevation = 10.dp,
         modifier = Modifier
             .fillMaxWidth()
@@ -56,7 +55,7 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
             Text(
                 text = title,
                 modifier = Modifier.padding(top = 8.dp),
-                color = Color.DarkGray
+                color = MaterialTheme.colors.onBackground
             )
             Text(
                 text = "by $artist",
@@ -70,7 +69,7 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
                     text = desc,
                     style = MaterialTheme.typography.body1,
                     modifier = Modifier.padding(12.dp),
-                    color = Color.DarkGray,
+                    color = MaterialTheme.colors.onBackground,
                     fontSize = 12.sp,
                     textAlign = TextAlign.Justify
                 )
