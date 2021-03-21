@@ -21,10 +21,8 @@ fun AllArts(artList: List<Art>) {
         item {
             Header()
         }
-        items(artList) {
-            artList.forEach { art ->
-                ArtCard(art.imageRes, art.title, art.artist, art.description)
-            }
+        items(artList) { art ->
+            ArtCard(art.imageRes, art.title, art.artist, art.description)
         }
     }
 }
