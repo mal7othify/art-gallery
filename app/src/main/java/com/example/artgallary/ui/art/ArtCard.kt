@@ -1,5 +1,6 @@
 package com.example.artgallary.ui.art
 
+import android.content.res.Configuration
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.Image
@@ -24,8 +25,10 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.artgallary.model.Arts
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
@@ -76,4 +79,16 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
             }
         }
     }
+}
+
+@Preview(name = "Light theme", showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_NO)
+@Preview(name = "Dark theme", showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Composable
+fun ArtCardPreview() {
+    ArtCard(
+        Arts[0].imageRes,
+        Arts[0].title,
+        Arts[0].artist,
+        Arts[0].description,
+    )
 }

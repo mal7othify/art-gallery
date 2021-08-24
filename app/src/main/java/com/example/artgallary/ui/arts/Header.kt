@@ -4,20 +4,18 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredHeight
-import androidx.compose.foundation.layout.requiredWidth
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Star
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.artgallary.R
 
 @Composable
 fun Header() {
@@ -25,13 +23,12 @@ fun Header() {
         modifier = Modifier.fillMaxWidth()
     ) {
         Image(
-            imageVector = ImageVector.vectorResource(R.drawable.ic_baseline_brush_24),
+            imageVector = Icons.Outlined.Star,
             contentDescription = null,
             colorFilter = ColorFilter.tint(MaterialTheme.colors.primary),
             modifier = Modifier.padding(start = 15.dp)
                 .align(Alignment.TopCenter)
-                .requiredHeight(24.dp)
-                .requiredWidth(24.dp)
+                .size(24.dp)
         )
         Text(
             "Art Gallery",
