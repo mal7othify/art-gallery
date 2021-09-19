@@ -48,7 +48,6 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
         elevation = 10.dp,
         modifier = Modifier
             .fillMaxWidth()
-            .wrapContentHeight()
             .padding(18.dp)
             .clickable(
                 onClick = {
