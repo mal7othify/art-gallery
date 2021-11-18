@@ -4,18 +4,17 @@ Art gallery app is an Android application which presents famous paintings along 
 ### This sample showcases:
 * Usage of Jetpack Compose.
 * Light & dark themes
+* Material You support.
 * Animation.
 
 ## 📸 Screenshot
-### Overview
-<img src="/results/overview.gif" width="260">
 
 ### Dark Theme
-<img src="/results/dark_screenshot_1.png" width="260">&emsp;<img src="/results/dark_screenshot_2.png" width="260">
+<img src="/results/blue_dark_overview.gif" width="260">&emsp;<img src="/results/pink_dark_overview.gif" width="260">&emsp;<img src="/results/yellow_dark_overview.gif" width="260">
 
 ### Light Theme
 
-<img src="/results/light_screenshot_1.png" width="260">&emsp;<img src="/results/light_screenshot_2.png" width="260">
+<img src="/results/blue_overview.gif" width="260">&emsp;<img src="/results/pink__overview.gif" width="260">&emsp;<img src="/results/yellow_overview.gif" width="260">
 
 ## License
 ```
