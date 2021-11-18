@@ -13,14 +13,13 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
-import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -44,7 +43,7 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
     var expandedState by remember { mutableStateOf(false) }
     Card(
         shape = RoundedCornerShape(10.dp),
-        backgroundColor = MaterialTheme.colors.background,
+        backgroundColor = MaterialTheme.colorScheme.secondaryContainer,
         elevation = 10.dp,
         modifier = Modifier
             .fillMaxWidth()
@@ -67,14 +66,14 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
             Text(
                 text = title,
                 modifier = Modifier.padding(top = 8.dp),
-                color = MaterialTheme.colors.onBackground
+                color = MaterialTheme.colorScheme.onBackground
             )
             Text(
                 text = "by $artist",
-                style = MaterialTheme.typography.body2,
+                style = MaterialTheme.typography.bodyLarge,
                 modifier = Modifier.padding(vertical = 8.dp),
                 textAlign = TextAlign.Right,
-                color = MaterialTheme.colors.primary
+                color = MaterialTheme.colorScheme.primary
             )
             Image(
                 modifier = Modifier
@@ -83,7 +82,7 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
                     .padding(bottom = 8.dp),
                 imageVector = if (expandedState) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
                 contentDescription = null,
-                colorFilter = ColorFilter.tint(MaterialTheme.colors.onSurface)
+                colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onBackground)
             )
             AnimatedVisibility(
                 visible = expandedState,
@@ -92,9 +91,9 @@ fun ArtCard(image: Int, title: String, artist: String, desc: String) {
             ) {
                 Text(
                     text = desc,
-                    style = MaterialTheme.typography.body1,
+                    style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.padding(12.dp),
-                    color = MaterialTheme.colors.onBackground,
+                    color = MaterialTheme.colorScheme.onBackground,
                     fontSize = 12.sp,
                     textAlign = TextAlign.Justify
                 )
