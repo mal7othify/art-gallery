@@ -14,7 +14,7 @@ Art gallery app is an Android application which presents famous paintings along 
 
 ### Light Theme
 
-<img src="/results/blue_overview.gif" width="260">&emsp;<img src="/results/pink__overview.gif" width="260">&emsp;<img src="/results/yellow_overview.gif" width="260">
+<img src="/results/blue_overview.gif" width="260">&emsp;<img src="/results/pink_overview.gif" width="260">&emsp;<img src="/results/yellow_overview.gif" width="260">
 
 ## License
 ```
