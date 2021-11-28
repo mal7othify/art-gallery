@@ -8,14 +8,14 @@ import androidx.compose.material.Surface
 import androidx.compose.material3.MaterialTheme
 import com.example.artgallary.model.Arts
 import com.example.artgallary.ui.arts.AllArts
-import com.example.artgallary.ui.theme.ArtGallaryTheme
+import com.example.artgallary.ui.theme.ArtGalleryTheme
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalAnimationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ArtGallaryTheme {
+            ArtGalleryTheme {
                 Surface(color = MaterialTheme.colorScheme.inverseOnSurface) {
                     AllArts(Arts)
                 }
